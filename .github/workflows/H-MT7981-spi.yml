@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #=========================================================
 
-name: H-mt7981-spi
+name: H-MT7981-spi
 
 on:
   repository_dispatch:
@@ -29,7 +29,7 @@ env:
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2.sh
   TZ: Asia/Shanghai
-  DEVICE: MT7981全系列-集成常用基础包（适合spi）
+  DEVICE: MT7981全系列-集成常用基础包（适合spi-128M闪存）
   UPLOAD_OUTPUT: true
 
 jobs:
