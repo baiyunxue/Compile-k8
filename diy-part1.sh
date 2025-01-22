@@ -18,6 +18,7 @@ echo "src-git kenzo https://github.com/kenzok8/openwrt-packages" >> ./feeds.conf
 echo "src-git small https://github.com/kenzok8/small" >> ./feeds.conf.default
 echo 'src-git nas https://github.com/linkease/nas-packages.git;master' >> feeds.conf.default
 echo 'src-git nas_luci https://github.com/linkease/nas-packages-luci.git;main' >> feeds.conf.default
+echo "src-git usbmodem https://github.com/Azq2/openwrt-usbmodem" >> ./feeds.conf.default
 #git clone https://github.com/kiddin9/kwrt-packages package
 #echo 'src-git-full packages https://github.com/jjm2473/packages.git;istoreos-22.03' >> feeds.conf.default
 #echo 'src-git-full luci https://github.com/jjm2473/luci.git;istoreos-22.03' >> feeds.conf.default
