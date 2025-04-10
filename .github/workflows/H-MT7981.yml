@@ -22,14 +22,14 @@ on:
  
 
 env:
-  REPO_URL: https://github.com/hanwckf/immortalwrt-mt798x
+  REPO_URL: https://github.com/baiyunxue/immortalwrt-mt798x
   REPO_BRANCH: openwrt-21.02
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2.sh
   TZ: Asia/Shanghai
-  DEVICE: MT7981系列-集成Docker和istore基础包pu（适合emmc）
+  DEVICE: RAX3000M-XR30-emmc
   UPLOAD_OUTPUT: true
 
 jobs:
