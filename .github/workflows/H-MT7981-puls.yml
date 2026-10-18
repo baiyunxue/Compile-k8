@@ -29,7 +29,7 @@ env:
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2.sh
   TZ: Asia/Shanghai
-  DEVICE: MT7981全系列-集成Docker和常用基础包（适合emmc及硬改256闪存）
+  DEVICE: RAX3000M、XR30(emmc)-集成Docker和常用基础包
   UPLOAD_OUTPUT: true
 
 jobs:
@@ -123,7 +123,7 @@ jobs:
     - name: Compile the firmware ==> 【开始编译固件：请稍等..........(大概2小时左右)】
       run: |
         cd openwrt
-        make -j$(nproc)
+        make -j$(nproc) || make -j1 || make -j1 V=s
         echo "FILE_DATE=$(date +"%Y%m%d%H%M")" >> $GITHUB_ENV
 
     - name : Upload bin directory ==> 【上传（bin+ipk）固件文件夹 到github空间】
